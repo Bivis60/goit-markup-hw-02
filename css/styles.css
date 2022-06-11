@@ -1,3 +1,244 @@
+:root{
+
+    --hed-background-color: #fff;
+    --hero-background-color: #2F303A;
+    --features-background-color: #E5E5E5;
+    --team-background-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --title-color:#212121;
+    --text-color: #757575;
+    --addres-color: #fff;
+    --meta-color: #FFFFFF99;
+    --logo-color: #000;
+    
+    --logo-font: 'Raleway',
+    sans-serif;
+    --text-font: 'Roboto',
+        sans-serif;
+}
+
 body {
-    background-color: rgb(255, 0, 106);
+    font-family: var(--text-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Хедер */
+
+.top {
+    background-color: var(--hed-background-color);
+    
+}
+
+.logo {
+    font-family: var(--logo-font);
+    color: var(--logo-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-color-text {
+    color: var(--accent-color);
+}
+
+.menu-nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.menu-nav:hover,
+.menu-nav:focus {
+    color: var(--accent-color);
+}
+
+.menu-contact {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.menu-contact:hover,
+.menu-contact:focus {
+    color: var(--accent-color);
+}
+
+/* Герой */
+
+.hero {
+    background-color: var(--hero-background-color);
+}
+
+.title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--addres-color);       
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button-hero {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--accent-color);
+    color: var(--addres-color);   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+}
+
+.button-hero:hover,
+.button-hero:hover {
+    background-color: var(--hed-background-color);
+    color: var(--accent-color);
+}
+
+/* Особливості */
+
+.features {
+    background-color: var(--features-background-color)
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.feature {
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-text {
+color: var(--text-color)
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* Наша команда */
+
+.team {
+    background-color: var(--team-background-color);
+}
+
+.subject {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+           
+    text-align: center;
+}
+
+.item {
+    font-size: 16px;
+    line-height: 1.19;
+           
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Футер */
+
+.bottom {
+    background-color: var(--hero-background-color);
+}
+
+.logo-text{
+    font-family: var(--logo-font);
+    color: var(--addres-color); 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.more {
+    font-style: normal;
+}
+
+.more-address {
+    color: var(--addres-color);
+       
+}
+
+.more-meta {
+    color: var(--meta-color);
+}
+
+/* Портфоліо */
+
+.section-portfolio {
+    background-color: var(--hed-background-color);
+}
+
+.filter-button {
+    border: none;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: inherit;
+    background-color: var(--team-background-color);
+    color: inherit;
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--addres-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+        
+    letter-spacing: 0.06em;
+}
+
+.portfolio-desc{
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-color);
 }
