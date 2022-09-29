@@ -1,0 +1,266 @@
+:root {
+  --font-logo: 'Raleway', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+
+  --accent-color: #2196f3;
+  --logo-top-color: #000000;
+  --title-color: #212121;
+  --main-text-color: #757575;
+  --addres-color: #ffffff;
+  --footer-contakt-color: rgba(255, 255, 255, 0.6);
+  --line-color: #ececec;
+
+  --main-background: #ffffff;
+  --footer-background: #2f303a;
+  --btn-background: #188ce8;
+  --team-background: #f5f4fa;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-text);
+  color: var(--main-text-color);
+}
+
+/* Хедер */
+
+.top {
+  background: var(--main-background);
+}
+.logo {
+  color: var(--accent-color);
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-top {
+  color: var(--logo-top-color);
+}
+
+.nav-link,
+.nav-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+.nav-link:hover,
+.nav-contact:hover {
+  color: var(--accent-color);
+}
+
+.nav-link:focus,
+.nav-contact:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* "Герой" */
+
+.hero {
+  background: var(--footer-background);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--addres-color);
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--addres-color);
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--btn-background);
+}
+
+/* Переваги */
+
+.benefits {
+  background: var(--main-background);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чим ми займаємося */
+
+.activity {
+  background: var(--main-background);
+}
+
+.activity-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/* Наша команда */
+
+.team {
+  background: var(--team-background);
+}
+
+.team-staff {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team-item {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+
+.bottom {
+  background: var(--footer-background);
+}
+
+.bottom-logo {
+  color: var(--addres-color);
+}
+
+.bottom-more {
+  font-style: normal;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.bottom-addres {
+  color: var(--addres-color);
+}
+
+.bottom-meta {
+  color: var(--footer-contakt-color);
+}
+
+/* Портфоліо */
+
+.filter {
+  background: var(--main-background);
+}
+
+.filter-btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+  background: var(--team-background);
+  border-radius: 4px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--addres-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+
+.filter-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
